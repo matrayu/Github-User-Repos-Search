@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Search for all repos created by a user</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Github Repo Search by User</h1>
+
+        <form id="js-form">
+            <label for="search-term">Github User Handle</label>
+            <input type="text" name="search-term" id="js-search-term" required>
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section class="results hidden">
+            <h2>Search results</h2>
+            <div class="repos">
+                <a href=""></a>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
